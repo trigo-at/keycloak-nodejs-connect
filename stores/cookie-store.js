@@ -20,7 +20,7 @@ let CookieStore = {};
 CookieStore.TOKEN_KEY = 'keycloak-token';
 
 CookieStore.get = (request) => {
-  let value = request.cookies[CookieStore.TOKEN_KEY];
+  let value = request.session[CookieStore.TOKEN_KEY];
   if (value) {
     try {
       return JSON.parse(value);
