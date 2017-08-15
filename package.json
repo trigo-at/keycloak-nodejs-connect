@@ -46,8 +46,8 @@
     "jsdoc": "^3.4.3",
     "jshint": "^2.9.4",
     "nsp": "^2.6.2",
-    "roi": "^0.14.1",
-    "semistandard": "^9.2.1",
+    "roi": "^0.15.0",
+    "semistandard": "^11.0.0",
     "tape": "^4.6.3"
   },
   "engines": {
