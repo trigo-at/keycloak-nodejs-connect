@@ -41,8 +41,11 @@ let unstore = (request, response) => {
 };
 
 CookieStore.wrap = (grant) => {
-  grant.store = store(grant);
-  grant.unstore = unstore;
+    if (grant) {
+        grant.store = store(grant);
+        grant.unstore = unstore;
+    }
+ 
 };
 
 module.exports = CookieStore;
